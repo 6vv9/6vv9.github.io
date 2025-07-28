@@ -1,15 +1,21 @@
 ---
 layout: post
-title:  "Adding Multiple Categories in Posts"
-summary: "Learn how to add categories in posts"
 author: athil
-date: '2021-02-28 1:35:23 +0530'
-category: ['jekyll','guides', 'sample_category']
-tags: jekyll
+title: Adding Multiple Categories in Posts
+date: 2025-07-28T21:52:28.086Z
+thumbnail-img: /assets/img/posts/banner2.png
+category:
+  - jekyll
+  - guides
+  - sample_category
+summary: Learn how to add categories in posts
+keywords: devlopr jekyll, how to use devlopr, devlopr, how to use
+  devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes, multi categories
+  and tags
 thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes, multi categories and tags
-usemathjax: false
 permalink: /blog/adding-categories-tags-in-posts/
+usemathjax: false
+tags: jekyll
 ---
 
 ## Adding Multiple Categories in Posts
