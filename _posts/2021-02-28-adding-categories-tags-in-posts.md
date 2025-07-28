@@ -3,7 +3,7 @@ thumbnail-img: /assets/img/posts/banner2.png
 layout: post
 author: athil
 title: Adding Multiple Categories in Posts
-date: 2025-07-28T21:52:28.086Z
+date: 2025-07-28T22:11:39.952Z
 thumbnail: /assets/img/posts/5.png
 category:
   - jekyll
