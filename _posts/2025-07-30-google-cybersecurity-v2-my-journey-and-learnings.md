@@ -191,7 +191,7 @@ Permissions are denoted using 10 character strings like “drwxrwxrwx”
 
 Some of the Linux CLI commands that I had the opportunity to get hands-on with were:
 
-<code class="highlighter-rouge">
+'''bash
 grep: Find string with specified substring
 
 piping ( | ): Use output of previous command as input 
@@ -235,7 +235,7 @@ userdel: delete users from groups
 usermod: modify user permissions (-g to add to primary groups, -G to add to supplementary groups)
 
 chown: change ownership of a file (: to designate as group)
-<﻿/code>
+'﻿''
 
 #### Public Key Infrastructure (PKI)
 
