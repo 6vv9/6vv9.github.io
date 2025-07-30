@@ -307,7 +307,7 @@ Vulnerability Assessment Steps
 
 According to NIST, an incident is **"an occurrence that actually or imminently jeopardizes, without lawful authority, the confidentiality, integrity, or availability of information or an information system; or constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies."**
 
->All security incidents are events but not all events are security incidents (An event is an observable occurrence on a network, system, or device. [Logs are records of events that occur within an organizations systems])
+> All security incidents are events but not all events are security incidents (An event is an observable occurrence on a network, system, or device. \[Logs are records of events that occur within an organizations systems])
 
 The Five W's of an incident:
 
@@ -319,8 +319,62 @@ The Five W's of an incident:
 
 S﻿ecurity incidents in an organization are handled by a designated team known as the CSIRT.
 
-Roles in a CSIRT Include:
+Roles in a CSIRT I
+nclude:
 
 1. Security Analyst: Detect security incidents and determine if they need action based on the severity, some can be remediated and don't need escalation
 2. Technical Lead/Ops Lead: When alerts require escalation they are handled by technical leads who guide through the lifecycle.
 3. Incident Coordinator: Tracks and manages the CSIRT and cross coordination with other teams in the organization.
+
+\#﻿### Networking and Network Analysis
+
+Components of a Packet:
+
+1. Header - Contains Protocol, Port, Source, Destination
+2. Payload - Data
+3. Footer - End of Packet
+
+Packet Capture (P-Cap) - A file that contains data packets that have been intercepted from an interface or a network.
+
+![](/assets/img/posts/image.png)
+
+**Transmission Control Protocol (TCP):**\
+A core internet protocol ensuring reliable, ordered, and error-checked delivery of data between two devices by establishing a connection before streaming data.
+
+**Internet Protocol (IP):**\
+The foundational protocol suite governing the addressing and routing of data packets across networked devices, ensuring data reaches its correct destination.
+
+**Wired Equivalent Privacy (WEP):**\
+The original Wi-Fi security standard developed in 1999 to offer wireless privacy level comparable to wired networks. WEP has known vulnerabilities and is considered obsolete.
+
+**Wi-Fi Protected Access (WPA) Standards:**
+
+* **WPA:** Introduced as WEP’s successor, uses TKIP (Temporal Key Integrity Protocol) but is vulnerable to the KRACK attack.
+* **WPA2:** Employs AES encryption for stronger security, yet still susceptible to KRACK.
+* **WPA3:** Addresses KRACK vulnerabilities, leverages SAE (Simultaneous Authentication of Equals), and enforces more robust encryption (128-bit standard; 192-bit in Enterprise mode).
+
+**Virtual Private Networks (VPNs):**\
+VPNs secure data by encrypting and decrypting it locally and encapsulating it before transmission to VPN servers, protecting privacy and integrity. Common protocols: WireGuard, IPSec.
+
+**Firewall Types:**
+
+* **Stateless Firewalls:** Filter packets solely based on set rules; do not keep track of ongoing connections.
+* **Stateful Firewalls:** Analyze the context of traffic (behavioral analysis), maintaining session information.
+* **Next-Generation Firewalls (NGFW):** Add cloud-based threat intelligence and application-level inspection to traditional stateful capabilities.
+
+**Network Security Zones:**
+
+* **DMZ (Demilitarized Zone):** Hosts public-facing services (e.g., web, DNS servers); isolated from internal networks for added protection.
+* **Internal Network:** Strictly for internal organizational use.
+* **Restricted Zone:** Subset of the internal network with access limited to specific groups.
+
+**Classless Inter-Domain Routing (CIDR):**\
+Notation using a slash (‘/’) to specify the number of bits for the network portion of an IP address (e.g., 192.168.1.0/24), improving routing efficiency and flexibility.
+
+**Proxy Servers and NAT:**
+
+* **Forward Proxy:** Alters outgoing requests’ source IP, masking users’ identities on external requests.
+* **Reverse Proxy:** Shields internal servers’ IP addresses from external users, often used for load balancing and protecting backend services.
+* **Email Proxy:** Intercepts and filters email for spam and malicious content.
+
+#﻿### Tools and Techniques
