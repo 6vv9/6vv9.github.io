@@ -44,3 +44,11 @@ The CISSP Domains represent the core of the cybersecurity industry, each of the 
 #### Threats, Risks and Vulnerabilities
 
 A *﻿*Threat** is anything or anyone or essentially any circumstance that can negatively impact your assets.
+
+A **Vulnerability** is something that a threat could use to carry out harm on an asset.
+
+When there is hence a presence of a vulnerability and a risk in conjunction, we can therefore say that there is a **Risk** present to the CIA triad of our asset.
+
+#### NIST Risk Management Framework
+
+Something I really enjoyed about the Google Cybersecurity Certificate was the dwelving into different frameworks, I've felt like this is something that is unfortunately glossed over when talking 
