@@ -2,7 +2,7 @@
 layout: post
 author: athil
 title: Google Cybersecurity V2 - My Journey and Learnings
-date: 2025-07-30T18:20:14.111Z
+date: 2025-07-30T20:33:48.602Z
 thumbnail: /assets/img/posts/gcs.png
 category:
   - certifications
