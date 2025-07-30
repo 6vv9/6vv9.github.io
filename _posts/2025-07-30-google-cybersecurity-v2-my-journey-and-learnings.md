@@ -256,3 +256,38 @@ T﻿his was a topic I really enjoyed as it was something that is much deeper tha
   * Only the website, with its corresponding **private key**, can decrypt this data.
 
 #﻿### Threat Modelling, Vulnerability Management and Assessment
+
+T﻿hreat modelling is the process of identifying potential threats to your assets and vulnerabilities that they can exploit, it involves :
+
+1. Scope
+2. Identify Threats (Attack Tree)
+3. Characterize the environment 
+4. Analyze Threats (Identify Gaps and Existing Protection, Assign Risk score)
+5. Mitigate Risks (Avoid Risk, Transfer Risk, Reduce Risk, Accept Risk)
+6. Evaluate Findings
+
+A commonly used framework for threat modelling is PASTA, Process for Attack Simulation And Threat Analysis.
+
+The stages of it are:
+
+
+1. Define business and security objectives
+2. Define the technical scope
+3. Decompose the application
+4. Threat Analysis
+5. Vulnerability Analysis
+6. Attack Modelling (Attack Tree)
+7. Analyze Risk and Impact
+Vulnerability Management Steps
+
+1. **Identify Vulnerabilities:** Detect and catalog vulnerabilities across systems and applications.
+2. **Consider Potential Exploits:** Analyze how vulnerabilities could be exploited by attackers and the impact of such exploits.
+3. **Prepare Defenses:** Develop and implement security controls and mitigations to protect against identified vulnerabilities.
+4. **Evaluate the Defenses:** Continuously monitor and test the effectiveness of defenses to ensure vulnerabilities remain managed
+
+Vulnerability Assessment Steps
+
+1. **Identification:** Discover and document vulnerabilities through scanning, enumeration, and information gathering.
+2. **Testing:** Perform penetration tests, exploit simulations, or vulnerability scanning to confirm exposure and severity.
+3. **Risk Assessment:** Analyze the potential impact and likelihood of vulnerabilities to prioritize remediation efforts.
+4. **Remediation:** Apply patches, configuration changes, or other fixes to eliminate or reduce vulnerabilities.
