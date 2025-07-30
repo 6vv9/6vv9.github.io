@@ -55,14 +55,41 @@ Something I really enjoyed about the Google Cybersecurity Certificate was the de
 
 Essentially, Frameworks are guidelines that are used to secure an organizations physical and digial assets to mitigate threats and risks. They consist of different steps, controls, mitigations and provide a base for organizations to build their security posture on.
 
-For instance, one of the frameworks touched upon in the course is the NIST RMF, the core steps of which are as follows:
+For instance, one of the frameworks touched upon in the course is the **NIST RMF**, the core steps of which are as follows:
 
-- **Prepare**: Necessary activities to be done before a threat occurs.
-- **Categorize**: Develop risk management processes for different types of threats.
-- **Select**: choose, customize and document safeguards (controls) that need to be implemented.
-- **Implement**: Implementing the plans for risk mitigation/making better changes where needed.
-- **Assess**: Determine if established controls are working properly and efficiently and meeting organizational needs.
-- **Authorize**: Increases accountability by assigning 1 person to authorize security implementations in an organization, can include POA&Ms.
-<small>POA&M: Plans of Action & Milestones that are created when a security audit reveals risks within an organization's security </small>
-- **Monitor**: Be aware of how systems are operating, RMM & SIEM used here, SOC Analysts work here, maintaining a low level of risk by how current systems are working.
+* **Prepare**: Necessary activities to be done before a threat occurs.
+* **Categorize**: Develop risk management processes for different types of threats.
+* **Select**: choose, customize and document safeguards (controls) that need to be implemented.
+* **Implement**: Implementing the plans for risk mitigation/making better changes where needed.
+* **Assess**: Determine if established controls are working properly and efficiently and meeting organizational needs.
+* **Authorize**: Increases accountability by assigning 1 person to authorize security implementations in an organization, can include POA&Ms.
+  <small>POA&M: Plans of Action & Milestones that are created when a security audit reveals risks within an organization's security </small>
+* **Monitor**: Be aware of how systems are operating, RMM & SIEM used here, SOC Analysts work here, maintaining a low level of risk by how current systems are working.
 
+S﻿imiliarly, the NIST CSF was also brought up, the steps for which are:
+
+* **Govern:** Establishing cybersecurity policies, risk management strategies, compliance requirements, and organizational roles to ensure effective security leadership and accountability.
+* **Identify:** Developing an understanding of organizational assets, risks, and vulnerabilities to manage cybersecurity risks effectively.
+* **Protect:** Implementing safeguards such as access control, data security, awareness training, and maintenance to limit or contain cybersecurity events.
+* **Detect:** Establishing continuous monitoring and detection processes to identify cybersecurity incidents promptly.
+* **Respond:** Planning and executing actions to contain, mitigate, and communicate about cybersecurity incidents during and after detection.
+* **Recover:** Developing and implementing plans for timely restoration of services and processes after a cybersecurity event to maintain resilience.
+
+\#﻿### Security Audits and Controls
+
+A﻿ security audit is a review of an organizations security policies, procedure and systems in place against a set of expectations. They begin with a set of scopes and goals. 
+
+I﻿f the audit reveals holes in the organizations security standing that prevent it from reaching the goals of the audit, additional controls may be implemented. Controls are safeguards that are put in place to reduce specific risks.
+
+C﻿ontrols are divided into mainly 3 categories:     
+
+* **Administrative/Managerial controls** - Human component, mainly policies that may be enforced through technical and physical measures.
+* **Technical controls** - Firewalls, IDS, IPS, Anti-Viruses, SIEM.
+* **Physical/Operational Controls** - Security Cameras, Fingerprint readers, biometric verification, fences and security personnel.
+
+Control types include, but are not limited to:
+
+1. Preventative
+2. Corrective
+3. Detective
+4. Deterrent
