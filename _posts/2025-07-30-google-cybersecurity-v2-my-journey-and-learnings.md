@@ -20,11 +20,11 @@ permalink: blog/google-cybersecurity
 ---
 This post represents lot of firsts for me, my first personal portfolio and blog website, my first post on said blog website and my first real cybersecurity certification. As the keen eyed of you may have already noticed, I passed the certificate a week ago but withheld announcing it for I wanted to make this website along with it...when it rains it pours amiright?
 
-![](/assets/img/posts/certificate_landing_page~41z8rkk5s3me.jpeg "Google Cybersecurity Certificate")
+![Google Cybersecurity Certificate](/assets/img/posts/certificate_landing_page~41z8rkk5s3me.jpeg "Google Cybersecurity Certificate")
 
 Why? Mainly because I wanted to give readers more than just an announcement of this achievement, by way of sharing my personal notes that I took during the course even if it were to benefit just one person or be the push that convinces them into taking the certificate, I'd say it was well worth the effort. 
 
-![](/assets/img/posts/screenshot-2025-07-31-001308.png "Notion Notes")
+![Google Cybersecurity Certificate Notion Notes](/assets/img/posts/screenshot-2025-07-31-001308.png "Notion Notes")
 
 I﻿ didn't think every module in every course of the certification was worth taking notes on so I've only jotted down the things I believe would be useful, interesting or worth knowing to the readers. Let's go through it together, shall we?
 
@@ -345,7 +345,7 @@ Components of a Packet:
 
 Packet Capture (P-Cap) - A file that contains data packets that have been intercepted from an interface or a network.
 
-![](/assets/img/posts/image.png)
+![Packet Components](/assets/img/posts/image.png "IP Packet")
 
 **Transmission Control Protocol (TCP):**\
 A core internet protocol ensuring reliable, ordered, and error-checked delivery of data between two devices by establishing a connection before streaming data.
@@ -398,7 +398,7 @@ A﻿lthough this certificate is aimed towards T1 SoC Analysts, it did bring up i
 
 P﻿robably one of my favorite parts of the course was the introduction of the **IoC Pyramid of Pain**, that visually represented how difficult it would be for attackers to perform when these IoCs are blocked by defenders.
 
-![](/assets/img/posts/image-1-.png)
+![IoC Pyramid of Pain](/assets/img/posts/image-1-.png "IoC Pyramid of Pain")
 
 V﻿arious network intrusion terms and techniques were also taught on:
 
