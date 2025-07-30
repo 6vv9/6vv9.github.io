@@ -93,3 +93,37 @@ Control types include, but are not limited to:
 2. Corrective
 3. Detective
 4. Deterrent
+
+Through the certification, I had the opportunity to conduct my own security audit on a company.
+
+#### OWASP Secure Design Principles
+
+The Open Worldwide Application Security Project, commonly known as OWASP was created to protect the websites that you and I visit everyday by helping secure them through best practices and exposing vulnerabilities so that they may be fixed in an appropriate fashion. Because as we all know, security through obscurity has never been a feasible solution.
+
+A﻿s part of this, there are a few OWASP Secure Design Principles that need to be kept in mind anytime we develop an application. A few are as follows: 
+
+* **Secure Defaults** – Systems should be secure out of the box.
+* **Fail Securely** – On error, default to a secure state (deny access, not allow).
+* **Least Privilege** – Grant only the minimum access needed.
+* **Defense in Depth** – Use multiple layers of security controls.
+* **Separation of Duties** – Split roles and responsibilities to reduce risk.
+* **Avoid Security by Obscurity** – Don’t rely on hiding information for security.
+* **Keep Security Simple** – Simpler designs are less prone to errors.
+* **Fix Issues Correctly** – Address root causes, not just symptoms.
+* **Compartmentalize** – Isolate components to limit impact of a breach.
+* **Least Common Mechanism** – Reduce shared components across users or services.
+
+\#﻿### Playbooks and Phases of Incident Response
+
+A﻿ **playbook** is a manual that defines responses to any security incident, it defines the procedures and the tools that should be used when taking an operational action. (Eg: Incident Response, Security Alert, Team Based, and Product Based)
+
+<!--StartFragment-->
+
+Incident Response Playbook Phases:
+
+1. Preparation - Policies, staffing plans, outlines roles and responsibilities and educating users
+2. Detection and Analysis - Detect and analyze events
+3. Containment - Prevent further damage and reduce impact
+4. Eradication And Recovery/IT Restoration
+5. Post Incident Activity - Documenting and reporting to organizational leadership and applying lessons learned
+6. Coordination - Reporting and sharing throughout the response process
