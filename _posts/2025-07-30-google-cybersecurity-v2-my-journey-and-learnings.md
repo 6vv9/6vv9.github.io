@@ -43,12 +43,26 @@ The CISSP Domains represent the core of the cybersecurity industry, each of the 
 
 #### Threats, Risks and Vulnerabilities
 
-A *﻿*Threat** is anything or anyone or essentially any circumstance that can negatively impact your assets.
+A **Threat** is anything or anyone or essentially any circumstance that can negatively impact your assets.
 
 A **Vulnerability** is something that a threat could use to carry out harm on an asset.
 
 When there is hence a presence of a vulnerability and a risk in conjunction, we can therefore say that there is a **Risk** present to the CIA triad of our asset.
 
-#### NIST Risk Management Framework
+#### NIST Risk Management and Cybersecurity Framework
 
-Something I really enjoyed about the Google Cybersecurity Certificate was the dwelving into different frameworks, I've felt like this is something that is unfortunately glossed over when talking 
+Something I really enjoyed about the Google Cybersecurity Certificate was the delving into different frameworks, I've felt like this is something that is unfortunately glossed over when talking about cybersecurity to newcomers. It isn't all hunched over in a dark room staring at a CLI things. Frameworks, Standards, Policies and Procedures are a major part of the various cybersecurity domains, and while I have previous knowledge in them, I appreciate that this certification gives newcomers an opportunity to touch upon this crucial topic. Making it valuable not only from a red/blue team perspective but also from the GRC side of the industry.
+
+Essentially, Frameworks are guidelines that are used to secure an organizations physical and digial assets to mitigate threats and risks. They consist of different steps, controls, mitigations and provide a base for organizations to build their security posture on.
+
+For instance, one of the frameworks touched upon in the course is the NIST RMF, the core steps of which are as follows:
+
+- **Prepare**: Necessary activities to be done before a threat occurs.
+- **Categorize**: Develop risk management processes for different types of threats.
+- **Select**: choose, customize and document safeguards (controls) that need to be implemented.
+- **Implement**: Implementing the plans for risk mitigation/making better changes where needed.
+- **Assess**: Determine if established controls are working properly and efficiently and meeting organizational needs.
+- **Authorize**: Increases accountability by assigning 1 person to authorize security implementations in an organization, can include POA&Ms.
+<small>POA&M: Plans of Action & Milestones that are created when a security audit reveals risks within an organization's security </small>
+- **Monitor**: Be aware of how systems are operating, RMM & SIEM used here, SOC Analysts work here, maintaining a low level of risk by how current systems are working.
+
