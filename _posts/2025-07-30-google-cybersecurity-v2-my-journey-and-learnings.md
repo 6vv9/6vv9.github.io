@@ -75,7 +75,7 @@ S﻿imiliarly, the NIST CSF was also brought up, the steps for which are:
 * **Respond:** Planning and executing actions to contain, mitigate, and communicate about cybersecurity incidents during and after detection.
 * **Recover:** Developing and implementing plans for timely restoration of services and processes after a cybersecurity event to maintain resilience.
 
-\#﻿### Security Audits and Controls
+#﻿### Security Audits and Controls
 
 A﻿ security audit is a review of an organizations security policies, procedure and systems in place against a set of expectations. They begin with a set of scopes and goals. 
 
@@ -117,13 +117,50 @@ A﻿s part of this, there are a few OWASP Secure Design Principles that need to 
 
 A﻿ **playbook** is a manual that defines responses to any security incident, it defines the procedures and the tools that should be used when taking an operational action. (Eg: Incident Response, Security Alert, Team Based, and Product Based)
 
-<!--StartFragment-->
-
 Incident Response Playbook Phases:
 
-1. Preparation - Policies, staffing plans, outlines roles and responsibilities and educating users
-2. Detection and Analysis - Detect and analyze events
-3. Containment - Prevent further damage and reduce impact
+1. Preparation - Policies, staffing plans, outlines roles and responsibilities and educating users.
+2. Detection and Analysis - Detect and analyze events.
+3. Containment - Prevent further damage and reduce impact.
 4. Eradication And Recovery/IT Restoration
-5. Post Incident Activity - Documenting and reporting to organizational leadership and applying lessons learned
-6. Coordination - Reporting and sharing throughout the response process
+5. Post Incident Activity - Documenting and reporting to organizational leadership and applying lessons learned.
+6. Coordination - Reporting and sharing throughout the response process.
+
+#﻿### Operating Systems and Linux 
+
+My personal highlight for the course was the sheer amount of hands-on labs that the course offered, hosted on the google cloud I was given access to Linux and Windows systems for various tasks ranging from usage of SIEMs, Wireshark, CLI to Python for automation.
+
+O﻿ne of the many things taught in the Operating Systems course were the boot process fundamentals:
+
+When a computer is powered on, the process begins with the BIOS or UEFI chip/firmware. This firmware is responsible for initializing all system hardware and conducting the Power-On Self Test (POST) to ensure everything is operating correctly. Once POST is complete, BIOS/UEFI searches for a bootable device, scans its first sector, and loads the bootloader into memory. The bootloader’s role is to find and load the operating system kernel, after which control is handed over to the OS itself. This sequence forms the critical bridge between hardware initialization and the operating system taking control, ensuring a reliable and secure boot process for every computing session.
+
+A﻿long with this, I dwelved into the Linux architecture made up of: 
+
+
+
+1. User
+2. Application
+3. Shell
+4. Filesystem Hierarchy Standard (FHS)
+5. Kernel
+6. Hardware
+
+Types of Authorizations and Permissions in Linux:
+
+
+
+1. Read
+2. Write
+3. Execute
+
+
+
+Types of Owners:
+
+
+
+1. User
+2. Group
+3. Other
+
+Denoted using 10 character string like “drwxrwxrwx”
