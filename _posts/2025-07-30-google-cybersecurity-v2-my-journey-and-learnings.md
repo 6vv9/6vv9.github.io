@@ -87,7 +87,7 @@ CSF Components:
 2. Tiers: Measure performance across each of the levels (Level 1(LOW) - Level 4(HIGH))
 3. Profiles: Current state of security plan
 
-\#﻿### Security Audits and Controls
+#### Security Audits and Controls
 
 A﻿ security audit is a review of an organizations security policies, procedure and systems in place against a set of expectations. They begin with a set of scopes and goals. 
 
@@ -125,7 +125,7 @@ A﻿s part of this, there are a few OWASP Secure Design Principles that need to 
 * **Compartmentalize** – Isolate components to limit impact of a breach.
 * **Least Common Mechanism** – Reduce shared components across users or services.
 
-\#﻿### Playbooks and Phases of Incident Response
+#### Playbooks and Phases of Incident Response
 
 A﻿ **playbook** is a manual that defines responses to any security incident, it defines the procedures and the tools that should be used when taking an operational action. (Eg: Incident Response, Security Alert, Team Based, and Product Based).There are broadly 3 types of playbooks: Non-Automated, Automated, Semi-Automated    
 
@@ -140,7 +140,7 @@ Incident Response Playbook Phases:
 5. Post Incident Activity - Documenting and reporting to organizational leadership and applying lessons learned.
 6. Coordination - Reporting and sharing throughout the response process.
 
-> Incident Response Lifecycle frameworks allow for organizations to develop standardized >incident response approach so that they are managed in an effective and consistent way.
+> Incident Response Lifecycle frameworks allow for organizations to develop standardized incident response approaches so that they are managed in an effective and consistent way.
 
 NIST Incident Response Lifecycle Framework Substeps: 
 
@@ -151,7 +151,7 @@ NIST Incident Response Lifecycle Framework Substeps:
 
 I﻿t should be noted that the Incident Response Lifecycle is not linear, as in steps can be reversed or forwarded as needed.
 
-\#﻿### Operating Systems and Linux 
+#### Operating Systems and Linux
 
 My personal highlight for the course was the sheer amount of hands-on labs that the course offered, hosted on the google cloud I was given access to Linux and Windows systems for various tasks ranging from usage of SIEMs, Wireshark, CLI to Python for automation.
 
@@ -166,7 +166,7 @@ H﻿ypervisors and virtual machines were also a crucial part of this topic.
 * **Type 2 Hypervisor:**\
   Runs atop the host operating system (like a typical application), then manages virtual machines—easier for desktop/laptop environments, but with some overhead.
 
-A﻿long with this, I dwelved into the Linux architecture made up of: 
+Along with this, I delved into the Linux architecture made up of: 
 
 1. User
 2. Application
@@ -187,9 +187,9 @@ Types of Owners:
 2. Group
 3. Other
 
-Denoted using 10 character strings like “drwxrwxrwx”
+Permissions are denoted using 10 character strings like “drwxrwxrwx”
 
-S﻿ome of the Linux CLI commands that I had the opportunity to get hands-on with were:
+Some of the Linux CLI commands that I had the opportunity to get hands-on with were:
 <﻿blockquote>
 grep: Find string with specified substring
 
@@ -236,7 +236,7 @@ usermod: modify user permissions (-g to add to primary groups, -G to add to supp
 chown: change ownership of a file (: to designate as group)
 <﻿/blockquote>
 
-\#﻿### Public Key Infrastructure (PKI)
+#### Public Key Infrastructure (PKI)
 
 T﻿his was a topic I really enjoyed as it was something that is much deeper than what the course brushes over, heres my understanding of PKI from personal research:
 
@@ -275,7 +275,7 @@ T﻿his was a topic I really enjoyed as it was something that is much deeper tha
   * The user's browser then uses **the website's public key** to encrypt data (like your credit card details) that it sends to the website.
   * Only the website, with its corresponding **private key**, can decrypt this data.
 
-\#﻿### Threat Modelling, Vulnerability Management and Assessment
+#### Threat Modelling, Vulnerability Management and Assessment
 
 T﻿hreat modelling is the process of identifying potential threats to your assets and vulnerabilities that they can exploit, it involves :
 
@@ -297,11 +297,13 @@ The stages of it are:
 5. Vulnerability Analysis
 6. Attack Modelling (Attack Tree)
 7. Analyze Risk and Impact
-   Vulnerability Management Steps
-8. **Identify Vulnerabilities:** Detect and catalog vulnerabilities across systems and applications.
-9. **Consider Potential Exploits:** Analyze how vulnerabilities could be exploited by attackers and the impact of such exploits.
-10. **Prepare Defenses:** Develop and implement security controls and mitigations to protect against identified vulnerabilities.
-11. **Evaluate the Defenses:** Continuously monitor and test the effectiveness of defenses to ensure vulnerabilities remain managed
+
+Vulnerability Management Steps
+
+1. **Identify Vulnerabilities:** Detect and catalog vulnerabilities across systems and applications.
+2. **Consider Potential Exploits:** Analyze how vulnerabilities could be exploited by attackers and the impact of such exploits.
+3. **Prepare Defenses:** Develop and implement security controls and mitigations to protect against identified vulnerabilities.
+4. **Evaluate the Defenses:** Continuously monitor and test the effectiveness of defenses to ensure vulnerabilities remain managed
 
 Vulnerability Assessment Steps
 
@@ -310,7 +312,7 @@ Vulnerability Assessment Steps
 3. **Risk Assessment:** Analyze the potential impact and likelihood of vulnerabilities to prioritize remediation efforts.
 4. **Remediation:** Apply patches, configuration changes, or other fixes to eliminate or reduce vulnerabilities.
 
-\#﻿### CSIRTs - Computer Security Incident Response Teams
+#### CSIRTs - Computer Security Incident Response Teams
 
 According to NIST, an incident is **"an occurrence that actually or imminently jeopardizes, without lawful authority, the confidentiality, integrity, or availability of information or an information system; or constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies."**
 
@@ -328,11 +330,11 @@ S﻿ecurity incidents in an organization are handled by a designated team known 
 
 Roles in a CSIRT Include:
 
-1. Security Analyst: Detect security incidents and determine if they need action based on the severity, some can be remediated and don't need escalation
-2. Technical Lead/Ops Lead: When alerts require escalation they are handled by technical leads who guide through the lifecycle.
-3. Incident Coordinator: Tracks and manages the CSIRT and cross coordination with other teams in the organization.
+1. **Security Analyst**: Detect security incidents and determine if they need action based on the severity, some can be remediated and don't need escalation.
+2. **Technical Lead/Ops Lead**: When alerts require escalation they are handled by technical leads who guide through the lifecycle.
+3. **Incident Coordinator**: Tracks and manages the CSIRT and cross coordination with other teams in the organization.
 
-\#﻿### Networking and Network Analysis
+#### Networking and Network Analysis
 
 Components of a Packet:
 
@@ -383,7 +385,7 @@ Notation using a slash (‘/’) to specify the number of bits for the network p
 * **Reverse Proxy:** Shields internal servers’ IP addresses from external users, often used for load balancing and protecting backend services.
 * **Email Proxy:** Intercepts and filters email for spam and malicious content.
 
-\#﻿### Tools and Techniques
+#### Tools and Techniques
 
 A﻿lthough this certificate is aimed towards T1 SoC Analysts, it did bring up important red/blue team tools and techniques that are paramount to the industry, including different types of XSS (Reflected, Stored, DOM), Intrusion Detection and Prevention Systems, End-point detection and response systems, Security Information and Event Management Systems, NIDS, RMM, HIDS, Threat hunting and Cyber deception.
 
@@ -431,7 +433,7 @@ IP Spoofing Attacks
 * **Smurf Attack:**\
   The attacker spoofs the victim’s IP address and floods a network with ICMP echo requests, amplifying the attack to overwhelm the target (combines DDoS and IP spoofing techniques).
 
-\#﻿### Conclusion and Takeaway
+#### Conclusion and Takeaway
 
 T﻿his course has taught me to develop a proactive habit of continuously seeking information on emerging security threats and incidents and demonstrating this security mindset in job interviews to stand out. 
 
@@ -450,5 +452,6 @@ For career preparation, craft your resume with facts and your cover letter to ex
 
 I﻿ hope this post has helped atleast a few of you decide if this certificate is for you, if not then that you got to learn a handful of new pieces of knowledge.
 
-### R﻿emember, 
+### R﻿emember,
+
 E﻿very Lock a Key; Every System a Vulnerability
