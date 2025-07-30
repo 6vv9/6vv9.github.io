@@ -45,9 +45,15 @@ The CISSP Domains represent the core of the cybersecurity industry, each of the 
 
 A **Threat** is anything or anyone or essentially any circumstance that can negatively impact your assets.
 
-A **Vulnerability** is something that a threat could use to carry out harm on an asset.
+A **Vulnerability** is something that a threat could use to carry out harm on an asset. Notably, a vulnerability is different from an exposure.
 
-When there is hence a presence of a vulnerability and a risk in conjunction, we can therefore say that there is a **Risk** present to the CIA triad of our asset.
+> **Vulnerability:** A vulnerability is a **weakness or flaw in software, hardware, or processes** that can be exploited by attackers to gain unauthorized access, disrupt operations, or steal sensitive information. These weaknesses can arise from coding errors, misconfigurations, or lapses in security practices.
+>
+> **Exposure:** An exposure is a **condition or state that increases the likelihood that a system will be targeted or affected by an attack**, but does **not directly allow for exploitation** without a related vulnerability. Exposures make systems more visible or accessible to potential attackers, raising overall risk in the absence of immediate vulnerabilities.
+
+When there is hence a presence of a vulnerability and a risk in conjunction, we can therefore say that there is a **Risk** present to the CIA triad of our asset. 
+
+> (Risk = Likelihood * Impact)
 
 #### NIST Risk Management and Cybersecurity Framework
 
@@ -75,7 +81,13 @@ S﻿imiliarly, the NIST CSF was also brought up, the steps for which are:
 * **Respond:** Planning and executing actions to contain, mitigate, and communicate about cybersecurity incidents during and after detection.
 * **Recover:** Developing and implementing plans for timely restoration of services and processes after a cybersecurity event to maintain resilience.
 
-#﻿### Security Audits and Controls
+CSF Components:
+
+1. Core: Identifies 5 broad functions (Identify, Protect, Detect, Respond, Recover)
+2. Tiers: Measure performance across each of the levels (Level 1(LOW) - Level 4(HIGH))
+3. Profiles: Current state of security plan
+
+\#﻿### Security Audits and Controls
 
 A﻿ security audit is a review of an organizations security policies, procedure and systems in place against a set of expectations. They begin with a set of scopes and goals. 
 
@@ -126,7 +138,7 @@ Incident Response Playbook Phases:
 5. Post Incident Activity - Documenting and reporting to organizational leadership and applying lessons learned.
 6. Coordination - Reporting and sharing throughout the response process.
 
-#﻿### Operating Systems and Linux 
+\#﻿### Operating Systems and Linux 
 
 My personal highlight for the course was the sheer amount of hands-on labs that the course offered, hosted on the google cloud I was given access to Linux and Windows systems for various tasks ranging from usage of SIEMs, Wireshark, CLI to Python for automation.
 
@@ -135,8 +147,6 @@ O﻿ne of the many things taught in the Operating Systems course were the boot p
 When a computer is powered on, the process begins with the BIOS or UEFI chip/firmware. This firmware is responsible for initializing all system hardware and conducting the Power-On Self Test (POST) to ensure everything is operating correctly. Once POST is complete, BIOS/UEFI searches for a bootable device, scans its first sector, and loads the bootloader into memory. The bootloader’s role is to find and load the operating system kernel, after which control is handed over to the OS itself. This sequence forms the critical bridge between hardware initialization and the operating system taking control, ensuring a reliable and secure boot process for every computing session.
 
 A﻿long with this, I dwelved into the Linux architecture made up of: 
-
-
 
 1. User
 2. Application
@@ -147,17 +157,11 @@ A﻿long with this, I dwelved into the Linux architecture made up of:
 
 Types of Authorizations and Permissions in Linux:
 
-
-
 1. Read
 2. Write
 3. Execute
 
-
-
 Types of Owners:
-
-
 
 1. User
 2. Group
@@ -166,7 +170,7 @@ Types of Owners:
 Denoted using 10 character strings like “drwxrwxrwx”
 
 S﻿ome of the Linux CLI commands that I had the opportunity to get hands-on with were:
-
+<﻿blockquote>
 grep: Find string with specified substring
 
 piping ( | ): Use output of previous command as input 
@@ -210,3 +214,45 @@ userdel: delete users from groups
 usermod: modify user permissions (-g to add to primary groups, -G to add to supplementary groups)
 
 chown: change ownership of a file (: to designate as group)
+<﻿/blockquote>
+
+\#﻿### Public Key Infrastructure (PKI)
+
+T﻿his was a topic I really enjoyed as it was something that is much deeper than what the course brushes over, heres my understanding of PKI from personal research:
+
+* **Subject (e.g., Website) Prepares:** The website (or any entity needing a certificate) first generates its own **public key** and **private key** pair. It keeps its private key secret and secure.
+* **Certificate Signing Request (CSR) to CA:**
+
+  * The website creates a **Certificate Signing Request (CSR)**.
+  * This CSR contains:
+
+    * Information about the website (domain name, organization, etc.).
+    * **The website's public key.** (This is the public key that will eventually be used to encrypt data sent *to* the website).
+  * This CSR is then sent to a **Certificate Authority (CA)**.
+* **CA's Verification and Signing Process:**
+
+  * The **CA** receives the CSR.
+  * The **CA verifies the identity** of the website (e.g., confirms domain ownership, organization details).
+  * If verification is successful, the CA constructs the digital certificate using the information from the CSR and other details.
+  * The CA then takes a cryptographic **hash** (fingerprint) of this entire certificate content.
+  * The CA encrypts *this hash* using its **own private key**. This encrypted hash is the **digital signature**.
+  * The CA attaches this digital signature to the certificate.
+  * The CA sends the completed digital certificate back to the website.
+* **Website Installs Certificate:** The website installs the newly issued digital certificate on its server.
+* **User Verification (When Someone Needs to Verify It):**
+
+  * When a user (e.g., your browser) connects to the website, the website sends its **digital certificate** to the user.
+  * The user's browser (or system) performs these steps to verify the certificate:
+
+    * It extracts the digital signature from the certificate.
+    * It uses the **CA's public key** (which is already trusted in the browser's certificate store) to **decrypt** the digital signature. This reveals the hash value that the CA originally created.
+    * Simultaneously, the user's browser calculates its *own* hash of the entire certificate content (excluding the signature).
+    * The browser compares the hash it *decrypted from the signature* with the hash it *just calculated*.
+    * **If the hashes match**, the certificate is considered legitimate (authentic and untampered).
+* **Secure Communication (Using the Website's Public Key):**
+
+  * **Once the certificate is verified as legitimate,** the user's browser extracts the **website's public key** *from within the now-trusted certificate*.
+  * The user's browser then uses **the website's public key** to encrypt data (like your credit card details) that it sends to the website.
+  * Only the website, with its corresponding **private key**, can decrypt this data.
+
+#﻿### Threat Modelling, Vulnerability Management and Assessment
