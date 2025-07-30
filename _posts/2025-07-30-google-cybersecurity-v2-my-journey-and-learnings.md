@@ -22,7 +22,7 @@ permalink: blog/google-cybersecurity
 
 This post represents lot of firsts for me, my first personal portfolio and blog website, my first post on said blog website and my first real cybersecurity certification. As the keen eyed of you may have already noticed, I passed the certificate a week ago but withheld announcing it for I wanted to make this website along with it...when it rains it pours amiright?
 
-Why? Mainly because I wanted to give readers more than just an announcement of this achievement, by way of sharing my personal notes that I took during the course even if it were to benefit just one person, I'd say it was well worth the effort. 
+Why? Mainly because I wanted to give readers more than just an announcement of this achievement, by way of sharing my personal notes that I took during the course even if it were to benefit just one person or be the push that convinces them into taking the certificate, I'd say it was well worth the effort. 
 
 ![](/assets/img/posts/screenshot-2025-07-31-001308.png "Notion Notes")
 
@@ -163,4 +163,50 @@ Types of Owners:
 2. Group
 3. Other
 
-Denoted using 10 character string like “drwxrwxrwx”
+Denoted using 10 character strings like “drwxrwxrwx”
+
+S﻿ome of the Linux CLI commands that I had the opportunity to get hands-on with were:
+
+grep: Find string with specified substring
+
+piping ( | ): Use output of previous command as input 
+
+ls (-l) (-a): list contents of directory
+
+pwd: print working directory
+
+cat: content at
+
+tail: last 10 lines
+
+head: first 10 lines 
+
+echo: print something 
+
+find (directory) (-name/-iname) (-mtime)
+
+mkdir: creates new directory
+
+rmdir: removes directory
+
+touch: new file
+
+rm: deletes files
+
+mv: moves to new location
+
+cp: copies to new location
+
+nano: basically cli notepad
+
+chmod(g+w),(o-r): changes permissions
+
+sudo: normal users can execute superuser commands
+
+useradd: add users to groups
+
+userdel: delete users from groups
+
+usermod: modify user permissions (-g to add to primary groups, -G to add to supplementary groups)
+
+chown: change ownership of a file (: to designate as group)
