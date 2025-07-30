@@ -159,6 +159,13 @@ O﻿ne of the many things taught in the Operating Systems course were the boot p
 
 When a computer is powered on, the process begins with the BIOS or UEFI chip/firmware. This firmware is responsible for initializing all system hardware and conducting the Power-On Self Test (POST) to ensure everything is operating correctly. Once POST is complete, BIOS/UEFI searches for a bootable device, scans its first sector, and loads the bootloader into memory. The bootloader’s role is to find and load the operating system kernel, after which control is handed over to the OS itself. This sequence forms the critical bridge between hardware initialization and the operating system taking control, ensuring a reliable and secure boot process for every computing session.
 
+H﻿ypervisors and virtual machines were also a crucial part of this topic.
+
+* **Type 1 Hypervisor:**\
+  Runs directly on the hardware of the host (also called “bare-metal hypervisor”) and manages virtual machines natively—offers high efficiency and isolation.
+* **Type 2 Hypervisor:**\
+  Runs atop the host operating system (like a typical application), then manages virtual machines—easier for desktop/laptop environments, but with some overhead.
+
 A﻿long with this, I dwelved into the Linux architecture made up of: 
 
 1. User
@@ -319,8 +326,7 @@ The Five W's of an incident:
 
 S﻿ecurity incidents in an organization are handled by a designated team known as the CSIRT.
 
-Roles in a CSIRT I
-nclude:
+Roles in a CSIRT Include:
 
 1. Security Analyst: Detect security incidents and determine if they need action based on the severity, some can be remediated and don't need escalation
 2. Technical Lead/Ops Lead: When alerts require escalation they are handled by technical leads who guide through the lifecycle.
@@ -368,7 +374,7 @@ VPNs secure data by encrypting and decrypting it locally and encapsulating it be
 * **Internal Network:** Strictly for internal organizational use.
 * **Restricted Zone:** Subset of the internal network with access limited to specific groups.
 
-**Classless Inter-Domain Routing (CIDR):**\
+**Classless Inter-Domain Routing (CIDR):**
 Notation using a slash (‘/’) to specify the number of bits for the network portion of an IP address (e.g., 192.168.1.0/24), improving routing efficiency and flexibility.
 
 **Proxy Servers and NAT:**
@@ -377,4 +383,72 @@ Notation using a slash (‘/’) to specify the number of bits for the network p
 * **Reverse Proxy:** Shields internal servers’ IP addresses from external users, often used for load balancing and protecting backend services.
 * **Email Proxy:** Intercepts and filters email for spam and malicious content.
 
-#﻿### Tools and Techniques
+\#﻿### Tools and Techniques
+
+A﻿lthough this certificate is aimed towards T1 SoC Analysts, it did bring up important red/blue team tools and techniques that are paramount to the industry, including different types of XSS (Reflected, Stored, DOM), Intrusion Detection and Prevention Systems, End-point detection and response systems, Security Information and Event Management Systems, NIDS, RMM, HIDS, Threat hunting and Cyber deception.
+
+> Threat hunting is the proactive search for threats on a network. Security professionals use threat hunting to uncover malicious activity that was not identified by detection tools and as a way to do further analysis on detections. (Eg: Fileless malware on memory which can't be detected by detection systems; Threat hunters perform research on emerging threats and attacks and then determine the probability of an organization being vulnerable to a particular attack.)
+>
+> ﻿Cyber deception involves techniques that deliberately deceive malicious actors with the goal of increasing detection and improving defensive strategies.
+
+**Honeypots** are an example of an active cyber defense mechanism that uses deception technology. Honeypots are systems or resources that are created as decoys vulnerable to attacks with the purpose of attracting potential intruders. For example, having a fake file labeled *Client* *Credit Card Information - 2022* can be used to capture the activity of malicious actors by tricking them into accessing the file because it appears to be legitimate. Once a malicious actor tries to access this file, security teams are alerted.
+
+P﻿robably one of my favorite parts of the course was the introduction of the **IoC Pyramid of Pain**, that visually represented how difficult it would be for attackers to perform when these IoCs are blocked by defenders.
+
+![](/assets/img/posts/image-1-.png)
+
+V﻿arious network intrusion terms and techniques were also taught on:
+
+Denial-of-Service (DoS) vs. Distributed Denial-of-Service (DDoS)
+
+* **DoS (Denial-of-Service):**\
+  A single device targets a server or service with overwhelming requests to disrupt its normal functioning.
+* **DDoS (Distributed Denial-of-Service):**\
+  Multiple devices or servers (often a botnet) coordinate to flood the target, making defense and mitigation harder.
+
+Types of DoS Attacks
+
+* **SYN Attack:**\
+  Exploits the first step of TCP handshake (SYN) by sending numerous SYN requests, overwhelming the server’s connection queue.
+* **ICMP Flood Attack:**\
+  Bombards the server with ICMP echo requests (“are you there?” messages), consuming resources and slowing the system.
+* **Ping of Death:**\
+  Sends oversized ICMP packets (>64KB), causing buffer overflows and potential crashes on vulnerable systems.
+
+Packet Sniffing
+
+* **Passive Packet Sniffing:**\
+  Intercepts and reads data traveling across the network without altering it; used for eavesdropping.
+* **Active Packet Sniffing:**\
+  Intercepts, then manipulates or injects data in transit, potentially altering communication or injecting malicious payloads.
+
+IP Spoofing Attacks
+
+* **On-Path Attack (Man-in-the-Middle):**\
+  The attacker places themselves between the sender and receiver, intercepting and possibly impersonating either party.
+* **Replay Attack:**\
+  Valid data transmissions are captured and maliciously retransmitted to trick the system or gain unauthorized access.
+* **Smurf Attack:**\
+  The attacker spoofs the victim’s IP address and floods a network with ICMP echo requests, amplifying the attack to overwhelm the target (combines DDoS and IP spoofing techniques).
+
+\#﻿### Conclusion and Takeaway
+
+T﻿his course has taught me to develop a proactive habit of continuously seeking information on emerging security threats and incidents and demonstrating this security mindset in job interviews to stand out. 
+
+Understand the distinct roles in data protection: Data Controllers define data processing purposes; Data Processors handle data on behalf of controllers; Data Custodians manage access and implement security controls; Data Protection Officers (DPOs) monitor compliance and advise on protection standards.
+
+Recognize key stakeholders — Risk Managers, CEO, CFO, CISO, and Operations Managers — who oversee organizational data security. When communicating security issues, clearly address what the problem is, its organizational impact, and resolution steps, using visual aids, emails, and calls for effective stakeholder engagement.
+
+Stay informed through reputable security blogs, security organizations, and conferences.
+
+Join cybersecurity associations to build professional networks aligned with your career goals,
+ find a mentor who can guide you through the vast world of cybersecurity.
+
+When using generative AI tools, adopt a thoughtful prompting strategy (T-C-R-E-I: Task, Context, References, Evaluate, Iterate) and tailor queries for clear, useful outputs—especially useful for interview preparation through sample questions and answer comparisons.
+
+For career preparation, craft your resume with facts and your cover letter to express your passion for cybersecurity, reflecting personal motivations. Practice technical interviews by asking clarifying questions and structure responses using the STAR method, while rehearsing non-technical interviews to improve communication skills.
+
+I﻿ hope this post has helped atleast a few of you decide if this certificate is for you, if not then that you got to learn a handful of new pieces of knowledge.
+
+### R﻿emember, 
+E﻿very Lock a Key; Every System a Vulnerability
