@@ -127,7 +127,9 @@ A﻿s part of this, there are a few OWASP Secure Design Principles that need to 
 
 \#﻿### Playbooks and Phases of Incident Response
 
-A﻿ **playbook** is a manual that defines responses to any security incident, it defines the procedures and the tools that should be used when taking an operational action. (Eg: Incident Response, Security Alert, Team Based, and Product Based)
+A﻿ **playbook** is a manual that defines responses to any security incident, it defines the procedures and the tools that should be used when taking an operational action. (Eg: Incident Response, Security Alert, Team Based, and Product Based).There are broadly 3 types of playbooks: Non-Automated, Automated, Semi-Automated    
+
+Incident Response Plans Contain: Procedures for Incident Response based on type, System Information, Additional Information like contact information and documentation.
 
 Incident Response Playbook Phases:
 
@@ -137,6 +139,17 @@ Incident Response Playbook Phases:
 4. Eradication And Recovery/IT Restoration
 5. Post Incident Activity - Documenting and reporting to organizational leadership and applying lessons learned.
 6. Coordination - Reporting and sharing throughout the response process.
+
+> Incident Response Lifecycle frameworks allow for organizations to develop standardized >incident response approach so that they are managed in an effective and consistent way.
+
+NIST Incident Response Lifecycle Framework Substeps: 
+
+1. Preparation
+2. Detection and Analysis
+3. Containment, Eradication and Recovery
+4. Post Incident Process
+
+I﻿t should be noted that the Incident Response Lifecycle is not linear, as in steps can be reversed or forwarded as needed.
 
 \#﻿### Operating Systems and Linux 
 
@@ -255,7 +268,7 @@ T﻿his was a topic I really enjoyed as it was something that is much deeper tha
   * The user's browser then uses **the website's public key** to encrypt data (like your credit card details) that it sends to the website.
   * Only the website, with its corresponding **private key**, can decrypt this data.
 
-#﻿### Threat Modelling, Vulnerability Management and Assessment
+\#﻿### Threat Modelling, Vulnerability Management and Assessment
 
 T﻿hreat modelling is the process of identifying potential threats to your assets and vulnerabilities that they can exploit, it involves :
 
@@ -270,7 +283,6 @@ A commonly used framework for threat modelling is PASTA, Process for Attack Simu
 
 The stages of it are:
 
-
 1. Define business and security objectives
 2. Define the technical scope
 3. Decompose the application
@@ -278,12 +290,11 @@ The stages of it are:
 5. Vulnerability Analysis
 6. Attack Modelling (Attack Tree)
 7. Analyze Risk and Impact
-Vulnerability Management Steps
-
-1. **Identify Vulnerabilities:** Detect and catalog vulnerabilities across systems and applications.
-2. **Consider Potential Exploits:** Analyze how vulnerabilities could be exploited by attackers and the impact of such exploits.
-3. **Prepare Defenses:** Develop and implement security controls and mitigations to protect against identified vulnerabilities.
-4. **Evaluate the Defenses:** Continuously monitor and test the effectiveness of defenses to ensure vulnerabilities remain managed
+   Vulnerability Management Steps
+8. **Identify Vulnerabilities:** Detect and catalog vulnerabilities across systems and applications.
+9. **Consider Potential Exploits:** Analyze how vulnerabilities could be exploited by attackers and the impact of such exploits.
+10. **Prepare Defenses:** Develop and implement security controls and mitigations to protect against identified vulnerabilities.
+11. **Evaluate the Defenses:** Continuously monitor and test the effectiveness of defenses to ensure vulnerabilities remain managed
 
 Vulnerability Assessment Steps
 
@@ -291,3 +302,25 @@ Vulnerability Assessment Steps
 2. **Testing:** Perform penetration tests, exploit simulations, or vulnerability scanning to confirm exposure and severity.
 3. **Risk Assessment:** Analyze the potential impact and likelihood of vulnerabilities to prioritize remediation efforts.
 4. **Remediation:** Apply patches, configuration changes, or other fixes to eliminate or reduce vulnerabilities.
+
+\#﻿### CSIRTs - Computer Security Incident Response Teams
+
+According to NIST, an incident is **"an occurrence that actually or imminently jeopardizes, without lawful authority, the confidentiality, integrity, or availability of information or an information system; or constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies."**
+
+>All security incidents are events but not all events are security incidents (An event is an observable occurrence on a network, system, or device. [Logs are records of events that occur within an organizations systems])
+
+The Five W's of an incident:
+
+1. Who triggered the incident?
+2. What happened?
+3. When the incident took place?
+4. Where the incident took place?
+5. Why the incident occurred?
+
+S﻿ecurity incidents in an organization are handled by a designated team known as the CSIRT.
+
+Roles in a CSIRT Include:
+
+1. Security Analyst: Detect security incidents and determine if they need action based on the severity, some can be remediated and don't need escalation
+2. Technical Lead/Ops Lead: When alerts require escalation they are handled by technical leads who guide through the lifecycle.
+3. Incident Coordinator: Tracks and manages the CSIRT and cross coordination with other teams in the organization.
